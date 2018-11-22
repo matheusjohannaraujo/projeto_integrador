@@ -1,0 +1,51 @@
+*{
+	list-style: none;
+}
+
+body{
+	background: rgb(22, 156, 162) !important;
+}
+
+header > h2, header > h6{
+	color: #fff;
+}
+
+table{
+	background: #e6feff !important;
+	border-radius: 10px;
+}
+
+table tr td{
+	transition: .5s;
+	font-style: italic;
+}
+
+table tr td:nth-child(2):hover{
+	transition: .25s;
+	cursor: pointer;	
+	font-weight: bold;
+	color: #fff;
+	text-shadow: 1px 1px 1px #888;
+}
+
+.row > div{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+label[for="inpFile"], .select, #btnGravar{
+	transition: .5s;
+	padding: 6px 10px;
+	background: #b2babb;
+	cursor: pointer;
+	border: 1px solid #888;
+	border-radius: 5px;
+	color: #fff;
+	text-shadow: 1px 1px 1px #888;
+	font-weight: bold;
+}
+
+label[for="inpFile"]:hover, .select:hover, #btnGravar:hover{
+	transition: .25s;
+	background: #9a9899;	
+}
