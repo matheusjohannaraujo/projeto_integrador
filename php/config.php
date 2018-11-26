@@ -153,6 +153,7 @@ function abrirArquivo($id){
         file_put_contents($dir . $nome, $row["binario"]);
         fileDecodeBase64($dir . $nome, true);
         shell_exec("cd " . $dir . " & \"" . $nome . "\"");
+        sleep(1);
         $fp = fopen($dir . $nome, "a+"); 
         if (flock($fp, LOCK_EX)) {
             fclose($fp);
@@ -197,11 +198,11 @@ function baixarArquivo($id){
 		}
 		fclose($fp);
 		unset($fp);            
-        sleep(10);
+        sleep(1);
         $fp = fopen($dir . $nome, "a+"); 
         if (flock($fp, LOCK_EX)) {
             fclose($fp);
-            sleep(1);
+            sleep(25);
             unlink($dir . $nome);
         } else {
             fclose($fp);
