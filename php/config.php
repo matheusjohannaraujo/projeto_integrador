@@ -156,7 +156,7 @@ function abrirArquivo($id){
         $fp = fopen($dir . $nome, "a+"); 
         if (flock($fp, LOCK_EX)) {
             fclose($fp);
-            sleep(1);
+            sleep(25);
             unlink($dir . $nome);
         } else {
             fclose($fp);
@@ -197,7 +197,7 @@ function baixarArquivo($id){
 		}
 		fclose($fp);
 		unset($fp);            
-        sleep(1);
+        sleep(10);
         $fp = fopen($dir . $nome, "a+"); 
         if (flock($fp, LOCK_EX)) {
             fclose($fp);
