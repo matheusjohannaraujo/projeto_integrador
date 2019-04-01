@@ -1,6 +1,7 @@
 https://github.com/matheusjohannaraujo/projeto_integrador
 
-Projeto Integrador
+Projeto Integrador - Biblioteca Virtual
+
 Faculdade: Instituto Pernambucano de Ensino Superior
 Curso: Bacharelado em Ciência da Computação
 Professor: Tennyson Accetti Resende Filho
